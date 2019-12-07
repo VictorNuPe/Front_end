@@ -43,23 +43,53 @@ body {
   font-size: 46px;
   text-shadow: 3px 3px 2px red;
 }
+.hero-content p {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 5px solid rgba(79, 96, 196, 0.4);
+}
 main {
   width: 80%;
   margin: auto;
 }
 .content-section {
   background-color: white;
-  padding: 15px;
+  padding: 10px;
   margin-top: 15px;
-}
-.rodape {
-  background-color: rgb(80, 76, 76);
-  padding: 15px;
-  margin-top: 15px;
-  text-align: center;
+  overflow: auto;
 }
 .content-section h2 {
   background-color: rgb(105, 100, 100);
   border-bottom: solid rgb(55, 70, 68) 5px;
   padding: 12px;
+}
+.card {
+  width: 32%;
+  float: left;
+  box-sizing: border-box;
+}
+.card-1 {
+  margin-right: 2%;
+}
+.card-2 {
+  margin-right: 2%;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card p {
+  background-color: rgb(61, 59, 59);
+  color: white;
+  margin: 0%;
+  padding: 6px;
+}
+.rodape {
+  background-color: rgb(59, 58, 58);
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+  text-shadow: 4px 4px 1px rgb(37, 36, 36);
+  color: rgb(253, 253, 253);
 }
