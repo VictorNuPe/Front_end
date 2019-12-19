@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+        background: rgb(73, 71, 71);
+        color: seashell;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .container {
+        max-width: 960px;
+        margin: auto;
+        padding: 0 30px;
+      }
+      #showcase {
+        height: 300px;
+      }
+      #showcase h1 {
+        font-size: 50px;
+        line-height: 1.3;
+        position: relative;
+        animation: heading;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes heading {
+        0% {
+          top: -50px;
+        }
+        100% {
+          top: 200px;
+        }
+      }
+      #content {
+        position: relative;
+        animation-name: content;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes content {
+        0% {
+          left: -1000px;
+        }
+        50% {
+          left: 0;
+        }
+        100% {
+          transform: rotateX(360deg);
+        }
+      }
+      .btn {
+        display: inline-block;
+        color: silver;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 15px;
+        border: snow 2px solid;
+        animation-name: botone;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s;
+        transition-property: background, transform;
+        transition-duration: 0.6s, 0.3s, 0.3s;
+        transition-delay: 0.6s, 0.3s, 0.3s;
+      }
+      .btn:hover {
+        background: rgba(143, 31, 31, 0.5);
+        transform: rotateX(45deg);
+      }
+      @keyframes botone {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="showcase">
+      <h1>Bem-vindo ao meu site !!!</h1>
+    </header>
+    <div id="content" class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+      nesciunt, ullam expedita soluta quaerat unde perferendis natus non
+      recusandae inventore consequuntur eius facilis excepturi sunt? Aperiam hic
+      nam labore dignissimos provident? Provident a in minima impedit deleniti
+      voluptate neque quae.
+    </div>
+    <a href="#" class="btn">Read More</a>
+  </body>
+</html>
