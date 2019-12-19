@@ -29,11 +29,12 @@
         font-size: 50px;
         line-height: 1.3;
         position: relative;
-        animation: heading;
+        animation-name: poker;
         animation-duration: 2s;
         animation-fill-mode: forwards;
+        text-shadow: 2px 2px rgb(31, 27, 27);
       }
-      @keyframes heading {
+      @keyframes poker {
         0% {
           top: -50px;
         }
@@ -46,6 +47,7 @@
         animation-name: content;
         animation-duration: 3s;
         animation-fill-mode: forwards;
+        text-shadow: -2px 2px rgb(31, 27, 27);
       }
       @keyframes content {
         0% {
@@ -59,6 +61,7 @@
         }
       }
       .btn {
+        font-family: Tahoma;
         display: inline-block;
         color: silver;
         text-decoration: none;
@@ -69,13 +72,14 @@
         animation-duration: 3s;
         animation-fill-mode: forwards;
         animation-delay: 0.3s;
-        transition-property: background, transform;
-        transition-duration: 0.6s, 0.3s, 0.3s;
-        transition-delay: 0.6s, 0.3s, 0.3s;
+        transition-property: all;
+        transition-duration: 0.4s;
       }
       .btn:hover {
         background: rgba(143, 31, 31, 0.5);
         transform: rotateX(45deg);
+        transform: scale(1.3);
+        border-radius: 5px;
       }
       @keyframes botone {
         0% {

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background: rgb(49, 47, 45);
+}
+hr {
+  margin: 10px 0 10px 0;
+  border-color: black;
+  border-width: 2px;
+}
+.cabe {
+  text-align: center;
+  background-image: url(Imagens/cropped-1366-768-711435.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 100px 0 100px;
+  position: relative;
+  border-bottom: 4px solid black;
+  margin-bottom: 12px;
+}
+.cabe h1 {
+  color: black;
+  text-shadow: 2px 2px rgb(58, 49, 22);
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+.cabe p {
+  background: rgba(56, 55, 8, 0.726);
+  border-bottom: solid 2px black;
+  display: inline;
+  padding: 10px;
+}
+.menu ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.menu li:hover {
+  border: none;
+  transform: scale(30px);
+}
+.menu a {
+  font-family: Tahoma;
+  display: inline-block;
+  color: silver;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 15px;
+  border: rgb(61, 14, 14) 2px solid;
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+.menu a:hover {
+  background: rgba(255, 140, 0, 0.397);
+  transform: scale(1.3);
+  animation-name: tovers;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+@keyframes tovers {
+  0% {
+    color: aqua;
+    border-radius: 10px;
+  }
+  25% {
+    border-radius: 25px;
+  }
+  100% {
+    color: black;
+    border-radius: 20px;
+  }
+}
+.trigo {
+  width: 80%;
+  margin: auto;
+}
+.testers {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  animation-name: testation;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes testation {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.testers h1 {
+  font-family: Georgia;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.testers p {
+  margin-top: 10px;
+}
+.trigas {
+  background-image: url(Imagens/Gris_wallpaper.png);
+  background-size: cover;
+  border: 2px solid rgb(46, 4, 82);
+  height: 500px;
+  width: 80%;
+  margin: auto;
+}
+.trigas h1 {
+  color: rgb(57, 69, 80);
+  text-shadow: 2px 2px rgb(45, 31, 68);
+  text-align: center;
+  margin-top: 15px;
+}
+.trigas p {
+  color: bisque;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 30px;
+}
