@@ -113,12 +113,25 @@ hr {
   margin-top: 10px;
 }
 .trigas {
+  animation-name: spacer;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
   background-image: url(Imagens/Gris_wallpaper.png);
   background-size: cover;
+  background-repeat: no-repeat;
   border: 2px solid rgb(46, 4, 82);
   height: 500px;
   width: 80%;
   margin: auto;
+}
+@keyframes spacer {
+  0% {
+    width: -200px;
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 .trigas h1 {
   color: rgb(57, 69, 80);
@@ -127,7 +140,7 @@ hr {
   margin-top: 15px;
 }
 .trigas p {
-  color: bisque;
+  color: rgba(33, 61, 121, 0.671);
   width: 80%;
   margin-left: 50px;
   margin-top: 30px;
