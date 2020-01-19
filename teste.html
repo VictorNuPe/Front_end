@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Torcolito</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        margin: auto;
+      }
+      #fogers {
+        position: relative;
+        animation-name: torene;
+        animation-duration: 3s;
+        animation-fill-mode:forwards;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      }
+      @keyframes torene {
+        0%{
+            top: -1000px;
+            transform: scaleX(1);
+        }
+        100%{
+            top: 0;
+            transform: scaleX(3);
+        }
+      }
+      #pogers {
+        position: relative;
+        animation-name: animatione;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+      }
+      @keyframes animatione {
+        0% {
+          left: -1000px;
+        }
+        100% {
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fogers">
+      <h1>Um titulo muito interessante</h1>
+    </div>
+    <div id="pogers">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error
+        consequatur, porro minus molestiae debitis odio, temporibus nihil
+        explicabo iste id neque delectus vero sunt! Porro incidunt, beatae
+        nesciunt id reprehenderit ea similique, ipsam corporis, harum iure
+        quaerat consequatur placeat inventore cum tenetur reiciendis temporibus!
+      </p>
+    </div>
+  </body>
+</html>
