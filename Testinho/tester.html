@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+      body {
+        background-color: rgba(14, 10, 10, 0.644);
+        color: ghostwhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="padding-left: 20%;">Lógica de programação em Javascript</h1>
+
+    <button style="background-color: black;color: blue;" ,onclick="show()">Criar resultado</button>
+    <button onclick="clean()">Apagar resultado</button>
+
+    <div id="output"></div>
+
+    <script>
+      var output = document.querySelector("#output");
+      var mensagem = "";
+
+      function show() {
+        var n1 = prompt("Qual o número desejado ?");
+        n1 = parseInt(n1);
+        var i = 1;
+
+        while (i <= 1000) {
+          mensagem += n1 * i + "<br>";
+          i++;
+        }
+        output.innerHTML = mensagem;
+      }
+
+      function clean() {
+        mensagem = "";
+        output.innerHTML = mensagem;
+      }
+    </script>
+  </body>
+</html>
