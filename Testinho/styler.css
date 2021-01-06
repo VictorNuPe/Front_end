@@ -1,0 +1,7 @@
+h1:not([title$="World"]) {
+  background-color: red;
+}
+
+h1 + p {
+  background-color: black;
+}

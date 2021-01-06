@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: rgb(88, 87, 87);
+      }
+
+      article:nth-child(1) a {
+        color: red;
+      }
+
+      article:nth-child(3) p > a {
+        color: darkcyan;
+      }
+
+      article:nth-child(5) h3 + p {
+        margin-top: 60px;
+      }
+
+      article:nth-child(7) h3 ~ p {
+        color: orange;
+      }
+
+      article:not(.destaque) {
+        color: orange;
+      }
+      .destaque {
+        background: yellow;
+      }
+
+      a[href="#"] {
+        opacity: .4;
+      }
+
+      a[href^="http"] {
+        color: red;
+      }
+
+      a[href$=".html"] {
+        color: orchid;
+      }
+
+    </style>
+  </head>
+  <body>
+    <article>
+      <h3>Titulo</h3>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+    </article>
+
+    <hr />
+
+    <article>
+      <h3>Titulo</h3>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+    </article>
+
+    <hr />
+
+    <article>
+      <h3>Titulo</h3>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+    </article>
+
+    <hr />
+
+    <article class="destaque">
+      <p>antes do titulo</p>
+      <h3>Titulo</h3>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+      <p>
+        Paragrafo <a href="#">apenas um link com <b>negrito</b></a>
+      </p>
+    </article>
+
+    <ul>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#" >link falso</a></li>
+      <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+      <li><a href="transitiones.html">link interno</a></li>
+    </ul>
+  </body>
+</html>
